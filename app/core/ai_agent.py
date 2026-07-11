@@ -2,7 +2,7 @@ from langchain_groq import ChatGroq
 from langchain_community.tools.tavily_search import TavilySearchResults
 
 from langgraph.prebuilt import create_react_agent
-from langchain_core.messages.ai import AIMessage
+from langchain_core.messages import HumanMessage, AIMessage
 
 from app.config.settings import settings
 
@@ -15,10 +15,18 @@ def get_response_from_ai_agents(llm_id , query , allow_search ,system_prompt):
     agent = create_react_agent(
         model=llm,
         tools=tools,
-        state_modifier=system_prompt
+        prompt=system_prompt
     )
 
-    state = {"messages" : query}
+    # Convert query list of strings to proper message objects
+    formatted_messages = []
+    for idx, msg in enumerate(query):
+        if idx % 2 == 0:
+            formatted_messages.append(HumanMessage(content=msg))
+        else:
+            formatted_messages.append(AIMessage(content=msg))
+
+    state = {"messages" : formatted_messages}
 
     response = agent.invoke(state)
 

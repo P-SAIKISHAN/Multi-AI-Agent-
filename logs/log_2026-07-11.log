@@ -1,0 +1,52 @@
+2026-07-11 07:18:52,223 - WARNING - python-dotenv could not parse statement starting at line 2
+2026-07-11 07:18:52,226 - INFO - starting backend service..
+2026-07-11 07:18:54,236 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 07:25:34,144 - INFO - starting backend service..
+2026-07-11 07:25:36,145 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 07:27:37,454 - INFO - starting backend service..
+2026-07-11 07:27:39,465 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 07:38:30,754 - INFO - starting backend service..
+2026-07-11 07:38:32,760 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 07:39:38,954 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:39:40,767 - ERROR - Some error ocuured during reponse generation
+2026-07-11 07:39:48,050 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:39:49,198 - ERROR - Some error ocuured during reponse generation
+2026-07-11 07:41:51,988 - INFO - starting backend service..
+2026-07-11 07:41:53,998 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 07:42:38,971 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:42:40,648 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:42:45,397 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:42:45,400 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:44:03,404 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:44:04,806 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:44:09,132 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:44:09,132 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:49:15,906 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:49:18,432 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:49:18,432 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:49:43,283 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:49:46,257 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:49:46,257 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:50:17,804 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:50:19,873 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:50:19,875 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:53:03,182 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:53:04,682 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:53:11,932 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:53:11,936 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 07:53:12,118 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 07:53:13,252 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:53:15,421 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 07:53:15,421 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 08:05:51,560 - INFO - starting backend service..
+2026-07-11 08:05:53,566 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 08:08:37,189 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 08:08:39,289 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 08:08:39,322 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 08:14:58,581 - INFO - starting backend service..
+2026-07-11 08:15:00,582 - INFO - Starting Frontend service - opening default browser to 3D interface...
+2026-07-11 08:21:18,125 - INFO - Received request for model : llama-3.3-70b-versatile
+2026-07-11 08:21:22,555 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-07-11 08:21:22,588 - INFO - Sucesfully got response from AI Agent llama-3.3-70b-versatile
+2026-07-11 08:37:53,377 - INFO - starting backend service..
+2026-07-11 08:37:55,405 - INFO - Starting Frontend service - opening default browser to 3D interface...
