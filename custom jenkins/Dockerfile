@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     python3 \
     python3-pip \
     python3-venv \
+    awscli \
     && rm -rf /var/lib/apt/lists/*
 
 # Create symlink for python so 'python' command works (automating step 9 of setup guide)
