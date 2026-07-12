@@ -4,7 +4,7 @@ pipeline{
      environment {
          SONAR_PROJECT_KEY = 'MULTIAIAGENT'
 	 	 SONAR_SCANNER_HOME = tool 'Sonarqube'
-         AWS_REGION = 'eu-north-1'
+         AWS_REGION = 'us-east-1'
          ECR_REPO = 'multi-ai-agent'
          IMAGE_TAG = 'latest'
 	 }
@@ -59,6 +59,18 @@ pipeline{
         withCredentials([[$class: 'AmazonWebServicesCredentialsBinding', credentialsId: 'aws-token']]) {
             script {
                 sh """
+                # Validate cluster exists before deployment
+                echo "Validating ECS cluster 'multi-ai-agent' in region '${AWS_REGION}'"
+                aws ecs describe-clusters \
+                  --clusters multi-ai-agent \
+                  --region ${AWS_REGION} \
+                  --query 'clusters[0].clusterStatus' \
+                  --output text || {
+                    echo "ERROR: ECS cluster 'multi-ai-agent' not found in region '${AWS_REGION}'. Check AWS_REGION environment variable."
+                    exit 1
+                  }
+
+                echo "Updating ECS service..."
                 aws ecs update-service \
                   --cluster multi-ai-agent \
                   --service multi-ai-agent-def-service-90a78822  \
