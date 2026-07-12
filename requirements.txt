@@ -4,6 +4,5 @@ python-dotenv
 uvicorn
 fastapi
 pydantic
-streamlit
 langgraph
 langchain-core
