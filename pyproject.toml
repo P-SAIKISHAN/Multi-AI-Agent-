@@ -2,5 +2,21 @@
 requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
+[project]
+name = "multi-ai-agent"
+version = "0.1.0"
+description = "Multi AI Agent FastAPI application"
+requires-python = ">=3.12"
+dependencies = [
+  "langchain-groq",
+  "langchain-community",
+  "python-dotenv",
+  "uvicorn",
+  "fastapi",
+  "pydantic",
+  "langgraph",
+  "langchain-core",
+]
+
 [tool.vercel]
 entrypoint = "app.backend.api:app"
