@@ -7,6 +7,8 @@ pipeline{
          AWS_REGION = 'us-east-1'
          ECR_REPO = 'multi-ai-agent'
          IMAGE_TAG = 'latest'
+         ECS_CLUSTER_NAME = env.ECS_CLUSTER_NAME ?: 'multi-ai-agent'
+         ECS_SERVICE_NAME = env.ECS_SERVICE_NAME ?: 'multi-ai-agent-def-service-90a78822'
 	 }
 
     stages{
