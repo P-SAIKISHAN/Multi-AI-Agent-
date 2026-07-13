@@ -4,10 +4,14 @@ import time
 from dotenv import load_dotenv
 from app.common.logger import get_logger
 from app.common.custom_exception import CustomException
+from app.backend.api import app as backend_app
 
 logger=get_logger(__name__)
 
 load_dotenv()
+
+# Re-export the FastAPI instance so Vercel can detect it in app/main.py.
+app = backend_app
 
 def run_backend():
     try:
